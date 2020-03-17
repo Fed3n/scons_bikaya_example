@@ -1,0 +1,10 @@
+### BUILD EXAMPLE FOR BIKAYA PROJECT (OPERATING SYSTEMS) 2019/2020 @UNIBO USING SCONS ###
+
+This build system uses SCONS 3.1.2, for additional information https://scons.org/
+You need Python 2.7 or 3.x. With pip installer use 'pip install scons' for scons installation or download it at their website above.
+
+Add all source files and headers in local directory and modify the .c files list as shown in the example.
+Build using 'scons TARGET' where TARGET is either uarm or umps / umps2. Clean TARGET files using 'scons TARGET -c'.
+Cleaning is not necessary when changing build target.
+The build heavily depends on the presence of uarm_include and umps_include local directories as they contain build files and SConscript files.
+The SConstruct file as it is does not support additional directories automatically, please refer to SCons documentation for changes.
